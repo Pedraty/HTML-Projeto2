@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Pedro">
+    <meta name="description" content="projeto 2 com HTML5 e CSS3">
+    <meta name="keywords" content="HTML5, CSS3, video">
+    <link rel="shortcut icon" href="./Img/Escudo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Prata</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2>Freesh</h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="video/pexels-ivan-khmelyuk-7222009.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Descubra</h>
+            <h3>sobre a Índia</h3>
+            <p>Conheça a magia cultural de um grande país que atrai milhares de turistas todos os anos.</p>
+            <a href="#">Explorar</a>
+        </div>
+        <ul class="social">
+            <li>
+                <a href="#"><img class="icon" src="img/facebook.png" alt="Logo do Facebook" /></a>
+            </li>
+            <li>
+                <a href="#"><img class="icon" src="img/twitter.png" alt="Logo do Twitter" /></a>
+            </li>
+            <li>
+                <a href="#"><img class="icon" src="img/instagram.png" alt="Logo do Instagram" /></a>
+            </li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destino</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
